@@ -6,7 +6,21 @@ export const Container = styled.div`
     
 `;
 
+export const CategoryArea = styled.div`
+    color: white;
+    margin-top: 20px;
+`;
 
-export const Titulo = styled.h1`
+export const CategoryList = styled.div`
+    display: flex;
+    margin-top: 10px;
+`;
+
+export const ProductArea = styled.div`
+
+
+`;
+
+export const ProductList = styled.div`
 
 `;
