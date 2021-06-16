@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-    width: 740px;
+    width: 650px;
     padding: 10px;
 `;
 
@@ -15,6 +15,7 @@ export const ProductButtons = styled.div`
    margin-top: 10px;
    display: flex;
    justify-content: flex-end;
+   align-items: center;
 `;
  
 export const ProductPhoto = styled.img`
@@ -36,6 +37,8 @@ export const ProductDetails = styled.div`
 `;
 
 export const ProductQuantityArea = styled.div`
+    display: flex;
+    justify-content: space-between;
     
 `;
 
@@ -50,15 +53,44 @@ export const ProductIngredients = styled.div`
 
 export const ProductButton = styled.div`
     border: 0;
-    background-color: #073C07;
+    background-color: ${props=>props.small ? '#e63946' : '#073C07'};
     box-shadow: 4px 5px 0px #999;
     color: white;
-    font-size: 22px;
+    font-size: ${props=>props.small ? '13px' : '22px'};
     font-weight: bold;
-    padding: 10px 20px;
+    padding: ${props=> props.small ? '5px 10px' : '10px 20px' };
     margin-left: 10px;
     border-radius:5px;
+    cursor: pointer; 
 `;
+
+export const ProductQuantity = styled.div`
+    display: flex;
+    align-items: center;
+`;
+
+export const ProductQtimage = styled.img`
+    width: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: auto;
+    cursor: pointer;
+`;
+
+export const ProductQtText = styled.div`
+    font-size: 25px;
+    font-weight: bold;
+   
+`;
+
+export const ProductPrice = styled.div`
+    font-size: 30px;
+    font-weight: bold;
+`;
+        
+
+
+
       
        
    

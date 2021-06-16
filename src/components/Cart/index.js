@@ -1,5 +1,10 @@
 import React from 'react';
-import { CartArea, CartBody, CartHeader, CartIcon, CartText } from './styled';
+import { useSelector } from 'react-redux';
+import { CartArea,
+         CartBody, 
+         CartHeader, 
+         CartIcon, 
+         CartText } from './styled';
 
 export default () => {
     return(
